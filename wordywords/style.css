@@ -1,0 +1,332 @@
+/* =========================================================
+   WORDY WORDS
+   Main Styles
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #fff7d6;
+    color: #171717;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   GAME CONTAINER
+========================================================= */
+
+.game {
+    width: min(900px, 92%);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 0 35px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.back-button {
+    color: #171717;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    padding: 10px 15px;
+
+    border: 2px solid #171717;
+    border-radius: 12px;
+
+    background: white;
+
+    transition: transform 0.15s ease;
+}
+
+
+.back-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.progress {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.game-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 0;
+}
+
+
+.game-content h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+
+    font-weight: 900;
+
+    letter-spacing: -0.07em;
+
+    line-height: 0.9;
+}
+
+
+.subtitle {
+    margin-top: 15px;
+
+    color: #6b6453;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   PUZZLE CARD
+========================================================= */
+
+.puzzle-card {
+    width: min(650px, 100%);
+
+    margin-top: 45px;
+
+    padding: 45px 40px;
+
+    background: white;
+
+    border: 3px solid #171717;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 0 #171717;
+}
+
+
+/* =========================================================
+   PUZZLE TYPE
+========================================================= */
+
+.puzzle-type {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 999px;
+
+    background: #171717;
+    color: white;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   PUZZLE QUESTION
+========================================================= */
+
+.puzzle-question {
+    margin: 35px 0;
+
+    font-size: clamp(3rem, 10vw, 6rem);
+
+    font-weight: 900;
+
+    letter-spacing: 0.08em;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   ANSWER INPUT
+========================================================= */
+
+#answer {
+    width: 100%;
+
+    padding: 17px 20px;
+
+    font-size: 1.1rem;
+
+    font-family: inherit;
+
+    text-align: center;
+
+    border: 3px solid #171717;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    background: #fffdf4;
+}
+
+
+#answer:focus {
+    box-shadow: 0 0 0 4px #ffe27a;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+#submit-button {
+    width: 100%;
+
+    margin-top: 14px;
+
+    padding: 17px;
+
+    font-family: inherit;
+
+    font-size: 1.05rem;
+
+    font-weight: 800;
+
+    border: 3px solid #171717;
+
+    border-radius: 15px;
+
+    background: #ffe27a;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 0 #171717;
+
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+
+#submit-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 0 #171717;
+}
+
+
+#submit-button:active {
+    transform: translateY(3px);
+
+    box-shadow: 0 2px 0 #171717;
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.feedback {
+    min-height: 25px;
+
+    margin-top: 18px;
+
+    font-weight: 800;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   SCORE
+========================================================= */
+
+.score {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+
+.score strong {
+    font-size: 1.3rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    text-align: center;
+
+    color: #8b836f;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .game {
+        width: 90%;
+    }
+
+    .puzzle-card {
+        padding: 30px 20px;
+    }
+
+    .puzzle-question {
+        margin: 25px 0;
+    }
+
+}
