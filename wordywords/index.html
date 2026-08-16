@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wordy Words</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <header class="game-header">
+            <a href="../" class="back-button">← Ellfred.fun</a>
+
+            <div class="progress">
+                Puzzle <span id="puzzle-number">1</span>
+            </div>
+        </header>
+
+
+        <section class="game-content">
+
+            <h1>Wordy Words</h1>
+
+            <p class="subtitle">
+                Solve the puzzle. Get a harder one.
+            </p>
+
+
+            <div class="puzzle-card">
+
+                <div id="puzzle-type" class="puzzle-type">
+                    WORD PUZZLE
+                </div>
+
+                <div id="puzzle-question" class="puzzle-question">
+                    Loading...
+                </div>
+
+                <input
+                    type="text"
+                    id="answer"
+                    placeholder="Type your answer..."
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+
+                <button id="submit-button">
+                    Submit
+                </button>
+
+                <p id="feedback" class="feedback"></p>
+
+            </div>
+
+
+            <div class="score">
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>How far can you get?</p>
+        </footer>
+
+    </main>
+
+
+    <script src="puzzles.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
