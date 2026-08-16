@@ -1,1 +1,196 @@
+/* =========================================================
+   ELLFRED.FUN
+   Main Website Styles
+========================================================= */
 
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1ea;
+    color: #171717;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 80px 0 50px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    line-height: 0.9;
+}
+
+.hero p {
+    margin-top: 18px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+/* =========================================================
+   PROJECT GRID
+========================================================= */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================================================
+   PROJECT CARDS
+========================================================= */
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    min-height: 180px;
+    padding: 30px;
+
+    border-radius: 28px;
+
+    text-decoration: none;
+    color: inherit;
+
+    border: 3px solid #171717;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 0 #171717;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.project-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PROJECT TEXT
+========================================================= */
+
+.project-card h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   PROJECT COLOURS
+========================================================= */
+
+.long-drive {
+    background: #dceeff;
+}
+
+.movie-night {
+    background: #e8ddff;
+}
+
+.ballpedia {
+    background: #dff5d8;
+}
+
+.wordy-words {
+    background: #fff0b8;
+}
+
+.gambling-is-bad {
+    background: #ffdada;
+}
+
+.bartenders {
+    background: #d8f3f0;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding-top: 50px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 150px;
+    }
+
+}
